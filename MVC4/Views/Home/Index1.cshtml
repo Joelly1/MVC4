@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "Usind Label and textbox";
+}
+
+
+<h2>Differenciating between Html TextBox and TextBoxFor</h2>
+@Html.TextBox("CompanyName", (string)ViewBag.CompanyName)
+<br/>
+@Html.DropDownList("Departments", "Select Departments")
+

@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>HTML Helpers Demo</h2>
+@*<input type="text" id="firstname" name="firstname" value=" "/>*@
+<div>
+    @Html.Label("firstname", "First Name")
+    @Html.TextBox("firstname", "John", new { @class = "redtextbox", @readonly = "true" })
+</div>
+<div>
+    @Html.Label("Password", "Your password")
+    @Html.Password("password")
+</div>
+<div>
+    @Html.Label("Comment", "Comment")
+    @Html.TextArea("Comments","",5,20,null)
+</div>
+<div>
+    <h1>MVC DropdownList</h1>
+    <br/>
+    @Html.DropDownList("Departments","Select Department")
+</div>
